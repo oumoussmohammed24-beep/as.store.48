@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>as.store.48 | متجر الأحذية الفاخرة</title>
+    
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SVG Definitions for Gold Gradient -->
+    <svg style="display: none;">
+        <defs>
+            <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#bf953f" />
+                <stop offset="25%" stop-color="#fcf6ba" />
+                <stop offset="50%" stop-color="#b38728" />
+                <stop offset="75%" stop-color="#fbf5b7" />
+                <stop offset="100%" stop-color="#aa7c11" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <div class="app-container">
+
+        <!-- HEADER -->
+        <header>
+            <div class="brand-header">
+                <div class="brand-logo-small">
+    <img src="logo.jpeg" alt="AS Logo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+</div>
+                <div class="brand-title">as.store.48</div>
+            </div>
+            <button class="cart-badge-btn" onclick="switchTab('shop')">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+        </header>
+
+        <!-- TAB 1: HOME -->
+        <div id="tab-home" class="tab-content active">
+            <div class="hero-card">
+               <div class="logo-display">
+    <img src="logo.jpeg" alt="AS Logo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+</div>
+
+                <div class="gold-flourish">
+                    <svg viewBox="0 0 200 24">
+                        <path d="M100,12 C70,12 50,2 20,2 C10,2 0,12 0,12 C0,12 10,22 20,22 C50,22 70,12 100,12 Z M100,12 C130,12 150,2 180,2 C190,2 200,12 200,12 C200,12 190,22 180,22 C150,22 130,12 100,12 Z M100,4 L104,12 L100,20 L96,12 Z"/>
+                    </svg>
+                </div>
+
+                <h1 class="hero-title">مرحباً بك في متجرك</h1>
+                <h2 class="hero-subtitle">as.store.48</h2>
+                <p class="hero-desc">أرقى تشكيلة من الأحذية العصرية بجودة عالية وأسعار استثنائية ابتداءً من <strong>149 DH</strong> فقط!</p>
+                
+                <button class="btn-gold-primary" onclick="switchTab('shop')">
+                    <i class="fa-solid fa-shoe-prints"></i>
+                    تسوق التشكيلة الآن
+                </button>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h4>توصيل مجاني</h4>
+                    <p>لكل طلبات مدينة وجدة</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <h4>الدفع عند الاستلام</h4>
+                    <p>افحص حذاءك قبل الدفع</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-gem"></i>
+                    <h4>جودة عالية</h4>
+                    <p>تصاميم فاخرة ومريحة</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-headset"></i>
+                    <h4>خدمة الزبناء</h4>
+                    <p>مباشرة عبر الواتساب</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 2: SHOP (17 Shoes) -->
+        <div id="tab-shop" class="tab-content">
+            <div class="shop-header">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="ابحث عن الحذاء..." onkeyup="filterProducts()">
+                </div>
+            </div>
+
+            <div class="products-grid" id="productsGrid"></div>
+        </div>
+
+        <!-- TAB 3: ABOUT US -->
+        <div id="tab-about" class="tab-content">
+            <div class="about-card">
+               <img src="lmahal.jpeg" alt="صورة محل as.store.48" class="about-store-img" id="storeImage">
+                <h2 class="about-title">متجر as.store.48</h2>
+                <p class="about-text">
+                    أهلاً بكم في متجركم المتخصص في بيع أحدث وأجود صيحات الأحذية الرياضية والعصرية بمدينة وجدة. 
+                    نحن نحرص دائماً على اختيار أفضل الموديلات التي تجمع بين الأناقة، الراحة والجودة العالية بأسعار مناسبة للجميع.
+                    تفضلوا بزيارة محلنا الكائن بقسارية سوق الليل بوجدة أو اطلبوا مباشرة عبر موقعنا مع خدمة التوصيل السريع!
+                </p>
+            </div>
+        </div>
+
+        <!-- TAB 4: LOCATION (Nike Style) -->
+        <div id="tab-location" class="tab-content">
+            <div class="location-card">
+                <div class="location-header">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3 style="color: var(--gold-primary);">موقع المحل</h3>
+                </div>
+                <p style="font-size: 14px; color: #fff; font-weight: 700;">قسارية سوق الليل، وجدة - المغرب</p>
+                
+                <div class="map-frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.189578278235!2d-1.9125!3d34.6815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDQwJzUzLjQiTiAxwrA1NCA0NS4wIlc!5e0!3m2!1sar!2sma!4v1620000000000!5m2!1sar!2sma" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <a href="https://maps.app.goo.gl/LjHEWE8YvQhmbQ32A?g_st=aw" target="_blank" class="btn-gold-primary">
+                    <i class="fa-solid fa-route"></i>
+                    فتح الاتجاهات ف Google Maps
+                </a>
+            </div>
+        </div>
+
+        <!-- TAB 5: CONTACT & SOCIALS -->
+        <div id="tab-contact" class="tab-content">
+            <h3 style="color: var(--gold-primary); margin-bottom: 16px; text-align: center;">تواصل معنا</h3>
+
+            <a href="https://wa.me/212718061113" target="_blank" class="social-link-item">
+                <div class="social-info">
+                    <div class="social-icon icon-wa"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div>
+                        <div style="font-weight: 700;">الواتساب المباشر</div>
+                        <div style="font-size: 12px; color: var(--text-muted);">0718061113</div>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-left" style="color: var(--text-muted);"></i>
+            </a>
+
+            <a href="https://www.instagram.com/as.store.48?rpxt=MWxobmRnM243NmNvdw==" target="_blank" class="social-link-item">
+                <div class="social-info">
+                    <div class="social-icon icon-ig"><i class="fa-brands fa-instagram"></i></div>
+                    <div>
+                        <div style="font-weight: 700;">الانستغرام</div>
+                        <div style="font-size: 12px; color: var(--text-muted);">@as.store.48</div>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-left" style="color: var(--text-muted);"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@as.store.48?_r=1&_t=ZS-9ArIaP0rwOa" target="_blank" class="social-link-item">
+                <div class="social-info">
+                    <div class="social-icon icon-tk"><i class="fa-brands fa-tiktok"></i></div>
+                    <div>
+                        <div style="font-weight: 700;">التيك توك</div>
+                        <div style="font-size: 12px; color: var(--text-muted);">@as.store.48</div>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-left" style="color: var(--text-muted);"></i>
+            </a>
+
+            <div class="dev-credit-box">
+                طور بكل إتقان بواسطة 
+                <br>
+                <a href="https://oumoussmohammed24-beep.github.io/my-website/" target="_blank">Mohammed Oumouss</a>
+            </div>
+        </div>
+
+        <!-- ORDER MODAL POPUP -->
+        <div id="orderModal" class="modal-overlay">
+            <div class="modal-body">
+                <div class="modal-header">
+                    <h3 id="modalProductTitle" style="color: var(--gold-primary); font-size: 16px;">إتمام الطلب</h3>
+                    <button class="modal-close" onclick="closeOrderModal()">&times;</button>
+                </div>
+
+                <form id="orderForm" onsubmit="submitWhatsAppOrder(event)">
+                    <div class="form-group">
+                        <label>اختر المقاس (Pointure):</label>
+                        <div class="size-selector">
+                            <button type="button" class="size-btn" onclick="selectSize(this, '39')">39</button>
+                            <button type="button" class="size-btn selected" onclick="selectSize(this, '40')">40</button>
+                            <button type="button" class="size-btn" onclick="selectSize(this, '41')">41</button>
+                            <button type="button" class="size-btn" onclick="selectSize(this, '42')">42</button>
+                            <button type="button" class="size-btn" onclick="selectSize(this, '43')">43</button>
+                            <button type="button" class="size-btn" onclick="selectSize(this, '44')">44</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>الكمية:</label>
+                        <div class="qty-control">
+                            <button type="button" class="qty-btn" onclick="changeQty(-1)">-</button>
+                            <span id="qtyVal" style="font-size: 16px; font-weight: 800; min-width: 24px; text-align: center;">1</span>
+                            <button type="button" class="qty-btn" onclick="changeQty(1)">+</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>الاسم الكامل:</label>
+                        <input type="text" id="custName" class="form-control" placeholder="أدخل اسمك الكامل" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>رقم الهاتف:</label>
+                        <input type="tel" id="custPhone" class="form-control" placeholder="06XXXXXXXX" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>المدينة (التوصيل):</label>
+                        <select id="custCity" class="form-control" onchange="calculateTotal()" required>
+                            <option value="oujda">وجدة (توصيل مجاني - 0 DH)</option>
+                            <option value="other">مدينة أخرى (+30 DH توصيل)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>العنوان الكامل:</label>
+                        <input type="text" id="custAddress" class="form-control" placeholder="الحي، زنقة، رقم الدار" required>
+                    </div>
+
+                    <div class="price-summary-box">
+                        <div class="price-row">
+                            <span>ثمن الحذاء:</span>
+                            <span id="itemPriceText">149 DH</span>
+                        </div>
+                        <div class="price-row">
+                            <span>مصاريف التوصيل:</span>
+                            <span id="deliveryPriceText" style="color: #25D366;">0 DH (مجاني)</span>
+                        </div>
+                        <div class="price-row total">
+                            <span>المجموع الكلي:</span>
+                            <span id="totalPriceText">149 DH</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-gold-primary" style="background: #25D366; color: #fff;">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 20px;"></i>
+                        تأكيد الطلب عبر الواتساب
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- MOBILE BOTTOM NAVIGATION BAR -->
+        <nav class="bottom-nav">
+            <div class="nav-item active" onclick="switchTab('home', this)">
+                <i class="fa-solid fa-house"></i>
+                <span>الرئيسية</span>
+            </div>
+            <div class="nav-item" onclick="switchTab('shop', this)">
+                <i class="fa-solid fa-shoe-prints"></i>
+                <span>المتجر</span>
+            </div>
+            <div class="nav-item" onclick="switchTab('about', this)">
+                <i class="fa-solid fa-store"></i>
+                <span>من نحن</span>
+            </div>
+            <div class="nav-item" onclick="switchTab('location', this)">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>الموقع</span>
+            </div>
+            <div class="nav-item" onclick="switchTab('contact', this)">
+                <i class="fa-solid fa-phone"></i>
+                <span>تواصل</span>
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
