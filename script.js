@@ -2,21 +2,21 @@
 const products = [
     { id: 1, name: "حذاء رياضي فاخر - Gold Edition 01", price: 149, img: "4.jpeg" },
     { id: 2, name: "حذاء أبيض أسود عصري - Classique 02", price: 149, img: "2.jpeg" },
-    { id: 3, name: "حذاء أنيق للمشي - Urban Comfort 03", price: 179, img: "1.jpeg" },
-    { id: 4, name: "حذاء ركض خفيف - Light Speed 12", price: 189, img: "14.jpeg" },
+    { id: 3, name: "حذاء أنيق للمشي - Urban Comfort 03", price: 149, img: "1.jpeg" },
+    { id: 4, name: "حذاء ركض خفيف - Light Speed 12", price: 149, img: "14.jpeg" },
     { id: 5, name: "حذاء رياضي رمادي - Active Grey 05", price: 149, img: "3.jpeg" },
-    { id: 6, name: "حذاء ركض خفيف - Light Speed 12", price: 199, img: "12.jpeg" },
-    { id: 7, name: "حذاء ركض خفيف - Light Speed 12", price: 159, img: "13.jpeg" },
-    { id: 8, name: "حذاء التميز والراحة - Royal AS 17", price: 169, img: "17.jpeg" },
-    { id: 9, name: "حذاء التميز والراحة - Royal AS 17", price: 194, img: "15.jpeg" },
+    { id: 6, name: "حذاء ركض خفيف - Light Speed 12", price: 149, img: "12.jpeg" },
+    { id: 7, name: "حذاء ركض خفيف - Light Speed 12", price: 149, img: "13.jpeg" },
+    { id: 8, name: "حذاء التميز والراحة - Royal AS 17", price: 149, img: "17.jpeg" },
+    { id: 9, name: "حذاء التميز والراحة - Royal AS 17", price: 149, img: "15.jpeg" },
     { id: 10, name: "حذاء التميز والراحة - Royal AS 17", price: 149, img: "16.jpeg" },
-    { id: 11, name: "حذاء رياضي عالي الجودة - Pro Sport 11", price: 179, img: "6.jpeg" },
+    { id: 11, name: "حذاء رياضي عالي الجودة - Pro Sport 11", price: 149, img: "6.jpeg" },
     { id: 12, name: "حذاء رياضي عالي الجودة - Pro Sport 11", price: 149, img: "7.jpeg" },
-    { id: 13, name: "حذاء رياضي عالي الجودة - Pro Sport 11", price: 189, img: "8.jpeg" },
-    { id: 14, name: "حذاء الموضة الجديدة - AS Trend 08", price: 159, img: "9.jpeg" },
-    { id: 15, name: "حذاء الموضة الجديدة - AS Trend 08", price: 169, img: "10.jpeg" },
-    { id: 16, name: "حذاء الموضة الجديدة - AS Trend 08", price: 219, img: "11.jpeg" },
-    { id: 17, name: "حذاء أنيق للمشي - Urban Comfort 03", price: 199, img: "5.jpeg" }
+    { id: 13, name: "حذاء رياضي عالي الجودة - Pro Sport 11", price: 149, img: "8.jpeg" },
+    { id: 14, name: "حذاء الموضة الجديدة - AS Trend 08", price: 149, img: "9.jpeg" },
+    { id: 15, name: "حذاء الموضة الجديدة - AS Trend 08", price: 149, img: "10.jpeg" },
+    { id: 16, name: "حذاء الموضة الجديدة - AS Trend 08", price: 149, img: "11.jpeg" },
+    { id: 17, name: "حذاء أنيق للمشي - Urban Comfort 03", price: 149, img: "5.jpeg" }
 ];
 
 let selectedProduct = null;
