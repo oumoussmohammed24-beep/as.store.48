@@ -7,7 +7,7 @@ const products = [
     { id: 5, name: "Nike Blue", price: 129, img: "4.jpeg" },
     { id: 6, name: "Nike White", price: 129, img: "7.jpeg" },
     { id: 7, name: "Nike black", price: 129, img: "8.jpeg" },
-    { id: 8, name: "Nike Grey", price: 1298, img: "6.jpeg" },
+    { id: 8, name: "Nike Grey", price: 129, img: "6.jpeg" },
     { id: 9, name: "SD Sports black", price: 129, img: "9.jpeg" },
     { id: 10, name: "SD Sports White", price: 129, img: "10.jpeg" },
     { id: 11, name: "SD Sports Beige", price: 129, img: "11.jpeg" },
